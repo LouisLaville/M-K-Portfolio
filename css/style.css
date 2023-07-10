@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  
+  
+  main{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: "Diatype Variable", Icons;
+    font-style: normal;
+    line-height: 1.2;
+    font-variation-settings: 'slnt' 0, 'MONO' 0;
+    margin-left: auto /*!content_right*/;
+    margin-right:0; /*!content_right*/;
+    text-align: left /*!text_left*/;
+  }  
+  
+  /* CLASSES */
+  .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: "Diatype Variable", Icons;
+    font-style: normal;
+    line-height: 1.2;
+    font-variation-settings: 'slnt' 0, 'MONO' 0;
+    margin-left: auto /*!content_right*/;
+    margin-right:0 /*!content_right*/;
+    padding-left:16px;
+    padding-right:200px;
+    padding-top:12px;
+    text-align: left /*!text_left*/;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .main-acceuil{
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carroussel-img {
+    width: 1515px;
+    height: 763px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* ID */
+  #carroussel{
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
