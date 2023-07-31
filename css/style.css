@@ -31,6 +31,17 @@ body, html {
     color: rgba(0, 0, 0, 0.75);
 }
 
+.left-section {
+  position: relative;
+}
+
+.left-section .copyright {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  font-size: 12px;
+}
+
 .right-section {
   flex: 1;
   background-color: #f2f2f2;
@@ -45,13 +56,14 @@ body, html {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
+  height: 100vh;
 }
 
 .carousel {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  max-width: 80%;
+  max-width: 100%;
   height: 100%;
   overflow: hidden;
 }
@@ -59,7 +71,7 @@ body, html {
 .carousel img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   margin-right: 10px;
 }
 
@@ -70,6 +82,8 @@ body, html {
 .carousel img.active {
   display: block;
 }
+
+/* PARTIE INFORMATIONS */
 
 .info {
   padding: 20px;
@@ -87,13 +101,33 @@ body, html {
     color: rgba(0, 0, 0, 0.75);
 }
 
-.left-section {
-  position: relative;
+/* PARTIE PROJETS */
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 60px; 
+  padding: 20px;
+  max-width: 100%;
+  overflow-y: auto; 
+  height: 100%; 
 }
 
-.left-section .copyright {
-  position: absolute;
-  bottom: 5px;
-  left: 20px;
-  font-size: 12px;
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project img {
+  width: 100%; 
+  max-height: 500px; 
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
 }
