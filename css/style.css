@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "texgyreheros";
-  src: url('texgyreheros/texgyreheros.otf') format('opentype');
+  src: url('../texgyreheros/texgyreheros.otf') format('opentype');
 }
 
 /* GLOBAL */
